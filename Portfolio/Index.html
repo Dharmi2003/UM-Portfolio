@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge"
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>My Portfolio</title>
+        <link rel="stylesheet" href="Style.css">
+        <script src="Script.js" defer></script>
+        <script src="https://kit.fontawesome.com/a40602d086.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="Images/Logo.webp" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+
+                <div class="header-txt">
+                    <p>Full Stack Debeloper</p>
+                    <p>Web Developer</p>
+                    <h1> Hi, I'm <span>Dharmishtha</span> <br>from Ahmedabad</h1>
+                </div>
+            </div>
+        </div>
+
+
+        <!--About Section-->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="Images/About.jpg">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title"> About Me </h1><br>
+                        <p>  I am a Full Stack Developer with a background in data science, SQL, and foundational programming skills, as well as experience in both front-end and back-end development. I love building projects that solve real-world problems.</p>
+
+                        <div class="tab-title">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span> Web Development</span><br> Web App Development</li>
+                                <li><span>  Front-end Development</span><br> Designing Web/App Interfaces</li>
+                                <li><span>App Development</span><br> Building Android/IOS Apps</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span> 2024 - Current </span><br> Full Stack Development Trainee at Unified Mentor Internship Program</li>
+                                <li><span> Jan-2024 to Feb-2024</span><br> We Development Virtual Internship at Flazetech</li>
+                                <li><span>2023</span><br> Digital House (E-Commerce Website) using Django (Python Framework)</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2023</span><br> BSC (CA&IT) <br> GPA: 3.86/5 <br> KSSBM, Gujrat University, Ahmedabad</li>
+                                <li><span>2020</span><br> HSC <br> Percentage: 86% <br> SB Vidhyalaya, Ahmedabad </li>
+                                <li><span>2018</span><br> SSC <br> Percentage: 90% <br> Ankur Vidhyalaya, Ahmedabad </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+        <!--Services-->
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title"> My Services </h1>
+
+                <div class="service-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2> Web Designs </h2><br>
+                        <p> Web design is the process of creating the visual layout and structure of a website. It focuses on aesthetics, usability, and functionality, ensuring that the design aligns with the brand and provides a pleasant user experience. In this languages like HTML, CSS, JavaScript are used and frameworks like React, Angular, or Node.js to create responsive, dynamic websites.</p>
+                        <a href="#">Learn More </a>
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-crop"></i>
+                        <h2> Front-end Designs </h2><br>
+                        <p>Front-end (UI/UX) design focuses on the interface and experience a user has when interacting with a website or app. UI (User Interface) design deals with the visual aspects, such as buttons, icons, and layouts, while UX (User Experience) design ensures that the flow and functionality are seamless and intuitive. Designers often create wireframes, prototypes, and conduct usability testing to refine the design and improve user satisfaction. They use tools like Figma, InVision, and Adobe XD for this process.</p>
+                        <a href="#">Learn More </a>
+                    </div>
+
+                    <div>
+                        <i class="fa-brands fa-app-store"></i>
+                        <h2> App Design </h2><br>
+                        <p>App design refers to designing mobile applications for user-friendly interactions on small screens, including smartphones and tablets. It emphasizes both the visual appeal and functionality of the app interface. App designers use tools like Figma, Adobe XD, and Sketch to create designs that are intuitive, engaging, and optimized for specific platforms (iOS and Android), ensuring consistency in navigation, gestures, and overall experience.</p>
+                        <a href="#">Learn More </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!--Portfolio-->
+        <div id="projects">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+
+                <div class="work-list">
+                    <div class="work">
+                        <img src="Images/work1.png"><br>
+                        <div class="layer">
+                            <h3>Digital House (Home Page)</h3>
+                            <p> Digital House is an e-commerce website offering a wide range of electronics, home appliances, and digital products. It provides a seamless shopping experience with easy navigation, secure payments, and fast delivery options. </p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="work">
+                        <img src="Images/work3.png"><br>
+                        <div class="layer">
+                            <h3>Digital House (Featured Prducts)</h3>
+                            <p> The Featured Product page highlights selected top-rated or trending products, showcasing key features, detailed descriptions, and high-quality images. It aims to give users a closer look at special offers or popular items, complete with customer reviews and purchasing options to enhance the shopping experience. </p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="work">
+                        <img src="Images/work5.png"><br>
+                        <div class="layer">
+                            <h3>Digital House (Blog Page)</h3>
+                            <p> The Blog page provides informative articles, buying guides, and tips related to products and trends in the industry. It helps users make informed decisions by covering topics like product comparisons, maintenance advice, and new technology insights, creating value and building trust with the audience. </p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+                    <!--<div class="work">
+                        <img src="E:\1_College\UM\New\work4.png">
+                    </div>
+
+                    <div class="work">
+                        <img src="E:\1_College\UM\New\work5.png">
+                    </div>-->
+                </div>
+
+                <a href="#" class="btn">See More</a>
+            </div>
+        </div>
+
+
+
+        <!--Contact-->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1><br>
+                        <p><i class="fa-solid fa-square-envelope"></i> dhruvichandegara127@gmail.com</p>
+                        <p><i class="fa-solid fa-square-phone"></i>  9725822862</p>
+                        <div class="social-icons">
+                            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+        
+                            <a href="#"><i class="fa-brands fa-telegram"></i></a>
+
+                            <a href="https://www.linkedin.com/in/dharmishtha-chandegara-3b3312272/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+
+                            <a href="https://github.com/Dharmi2003" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                        <a href="E:\1_College\Intern\Dharmishtha_Resume.pdf" download class="btn resume-btn">Download CV </a>
+                    </div>
+                    <div class="contact-right">
+                        <form id="contactForm">
+                            <input type="text" id="Name" placeholder="Your Name" required>
+                            <input type="email" id="Email" placeholder="Your Email" required>
+                            <textarea id="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn submit-btn">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p><i class="fa-regular fa-copyright"></i> 2024 Copyright: Dharmishtha Chandegara <!-- Made with <i class="fa-solid fa-heart" id="heart"></i> by Easy Tutorials --> </p>
+            </div>
+        </div>
+        <script src="Script.js">
+            
+        </script>
+    </body>
+</html>
